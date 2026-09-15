@@ -36,6 +36,10 @@ const App = () => {
               path='/users'
               element={<UserPage />} 
           />
+          <Route
+              path='/'
+              element={<Navigate to="/todos" replace />}
+          />
         </Routes>
       </main>
     </>

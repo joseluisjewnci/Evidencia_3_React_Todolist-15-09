@@ -9,7 +9,7 @@ import type { Priority, Todo } from '../../interfaces/todos/Form'
 import FormTodo 
     from '../../components/todos/FormTodo'
 
-import { consultarTodosAxios, crearTodoAxios, crearTodoFetch } 
+import { consultarTodosAxios, crearTodoAxios } 
     from '../../services/todos/TodoService'
 
 

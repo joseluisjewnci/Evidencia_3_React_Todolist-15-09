@@ -1,4 +1,3 @@
-import React from 'react'
 import type { IUser } from '../../interfaces/users/IUser'
 
 interface ListUsersProps{
