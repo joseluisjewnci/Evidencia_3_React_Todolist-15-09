@@ -1,4 +1,5 @@
 import axios from "axios";
+import type { IUser } from "../../interfaces/users/IUser"
 
 const API_URL="http://localhost:3006/users"
 
@@ -9,4 +10,8 @@ export const getAllUsers = async( ) => {
     return data
  }
 
-export const createUser = ( ) => { }
+//crear un usuario
+export const createUser = async (u: IUser) => {
+    const response = await axios.post(API_URL, u)
+    return response.data
+}
